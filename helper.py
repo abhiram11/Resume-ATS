@@ -22,7 +22,7 @@ def configure_deepseek(api_key):
 def get_gemini_response(prompt):
     """Generate a response using Gemini with enhanced error handling and response validation."""
     try:
-        model = genai.GenerativeModel('gemini-1.5-pro')
+        model = genai.GenerativeModel('gemini-2.0-flash')
         response = model.generate_content(prompt)
         
         # Ensure response is not empty
